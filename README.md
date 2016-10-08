@@ -6,7 +6,7 @@ This repository provides a bootstrap definition file to build Tensorflow singula
  2. Download nvidia driver (NVIDIA-Linux-x86_64-352.93.run), cuda 7.5 (cuda_7.5.18_linux.run) and cudnn5 (cudnn-7.5-linux-x64-v5.1.tgz) (Here I assume that the same nvidia driver/cuda have been installed in your host machine) and store the downloaded files and above scripts under /root
  3. sudo into the root ( sudo -s) and 
  4. cd into /root and run 'sh build.sh'
- 5. copy ubuntu_tensorflow_GPU.img into your own local folder and change its owner and group (sudo chown user_id:group_id ubuntu_tensorflow_GPU.img)
+ 5. copy ubuntu_tensorflow_GPU.img into your own local folder and change its owner and group (sudo chown user_id:group_id ubuntu_tensorflow_GPU.img) so that you can run it with local user.
  6. Run "singularity exec ubuntu_tensorflow_GPU.img python hello_world.py" to check whether it works.
  
 
