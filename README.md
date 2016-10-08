@@ -14,7 +14,7 @@ This repository provides a bootstrap definition file to build Tensorflow singula
 You can do it by vagrant + virtualbox. Inside VM, you can build container image and copy it into your host machine with Nvidia GPU card.
 
 #### My nvidia driver/cuda versions are different from those in the above scripts. How can I modify the above scripts?
-At the first step, you need to run 'nvidia-smi' to identify your nvidia version. Then you can download the corresponding nvidia driver
+At the first step, you need to run 'nvidia-smi' to identify your nvidia version in your host machine. Then you can download the corresponding nvidia driver
 (NVIDIA-Linux-x86_64-$driver_version.run ) and cuda/cudnn version and modify the script "tensorflow.sh". 
  
 
