@@ -6,3 +6,5 @@ This repository provides a bootstrap definition file to build Tensorflow singula
  2. Download nvidia driver (NVIDIA-Linux-x86_64-352.93.run), cuda 7.5 (cuda_7.5.18_linux.run) and cudnn5 (cudnn-7.5-linux-x64-v5.1.tgz) (Here I assume that the same nvidia driver/cuda have been installed in your host machine) and store the downloaded files in the same folder as the above scripts.
  3. sudo into the root ( sudo -s)
  4. cd to your script folder and run 'sh build.sh'
+ 
+
