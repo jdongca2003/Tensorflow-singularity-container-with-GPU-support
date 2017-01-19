@@ -4,17 +4,16 @@
 # through Lawrence Berkeley National Laboratory (subject to receipt of any
 # required approvals from the U.S. Dept. of Energy).  All rights reserved.
 
-BootStrap: debian
+BootStrap: debootstrap
 OSVersion: trusty
 MirrorURL: http://us.archive.ubuntu.com/ubuntu/
 
 
 %runscript
-    echo "This is what happens when you run the container..."
+    exec /usr/bin/python "$@"
 
 
 %post
-    echo "Hello from inside the container"
     sed -i 's/$/ universe/' /etc/apt/sources.list
     apt-get update 
     apt-get -y --force-yes install vim \
