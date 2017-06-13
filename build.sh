@@ -1,4 +1,4 @@
-IMAGE="ubuntu_tensorflow_GPU.img"
+IMAGE="tensorflow_gpu-1.1.0-cp27-linux_x86_64.img"
 DEF="ubuntu.def"
 sudo rm -f $IMAGE
 sudo singularity create $IMAGE
